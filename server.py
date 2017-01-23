@@ -18,6 +18,13 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/about")
+def about():
+    """More info on our awesome company, UberMelon."""
+
+    return render_template("about.html")
+
+
 @app.route("/apply")
 def display_application():
     """Allow people to apply for jobs at UberMelon."""

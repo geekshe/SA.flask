@@ -2,10 +2,17 @@
 
 body {
   font-family:Verdana, Arial, sans-serif;
-  background-color: #CCC;
+  background-color: #FFF;
   }
-input {
-  background-color:#FFC;
+
+input, select {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   }
 
 label.embolden{
@@ -16,6 +23,28 @@ p.instructions {
   border:dotted;
   }
 
-/*    Change the background color of all of the form input boxes and submit button to be yellow. (Can you do this for all input boxes without having to stylize each one independently?)
-    Change the text in the last name field to be bold.
-    Draw a border around the instruction box. */
+.jumbotron {
+  background: url("/static/IMAGES/Watermelon-Slices.jpg");
+  background-repeat: no-repeat;
+  width: 1000px;
+  margin: auto;
+  }
+
+form {
+  background: -webkit-linear-gradient(bottom, #CCC, #EEE 175px);
+  background: -moz-linear-gradient(bottom, #CCC, #EEE 175px);
+  background: linear-gradient(bottom, #CCC, #EEE 175px);
+  margin: auto;
+  position: relative;
+  width: 400px;
+  height: 350px;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  }
+
