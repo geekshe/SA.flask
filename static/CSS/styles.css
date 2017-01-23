@@ -1,0 +1,21 @@
+/* Your CSS goes here */
+
+body {
+  font-family:Verdana, Arial, sans-serif;
+  background-color: #CCC;
+  }
+input {
+  background-color:#FFC;
+  }
+
+label.embolden{
+  font-weight:bold;
+  }
+
+p.instructions {
+  border:dotted;
+  }
+
+/*    Change the background color of all of the form input boxes and submit button to be yellow. (Can you do this for all input boxes without having to stylize each one independently?)
+    Change the text in the last name field to be bold.
+    Draw a border around the instruction box. */

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Apply for a job at UberMelon{% endblock %}
+
+{% block content %}
+
+<!-- Block goes here -->
+
+<h1>Apply for a role at UberMelon</h1>
+
+  <p class="intructions">Take your ideas to the next level and make something that people use everyday. Something that changes the physical world&mdash;and does it fast. We still have a long way to go. Hop in and help us get there. Remember: UberMelon. It's like Uber...for melons! </p>
+
+  <form action="/thanks" method="POST">
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" name="first-name"><br>
+
+    <label for="last-name" class="embolden">Last Name: </label>
+    <input id="last-name" type="text" name="last-name"><br>
+
+    <label for="salary">Salary Requirements: </label>
+    <input id="salary" type="number" name="salary"><br>
+
+    <!-- Putting conditional outsite drop-down code so it won't show at all if 
+    there's nothing in the list of roles -->
+    {% if roles %}
+    <label for="role">Desired Role: </label>
+    <select id="role" name="role">
+    {% for role in roles %}
+      <option value="{{ role }}">{{ role }}</option>
+      {% endfor %}
+    </select><br>
+    {% endif %}
+
+    <input type="submit" name="submit" value="Apply">
+  </form>
+
+{% endblock %}

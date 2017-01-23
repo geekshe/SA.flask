@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Thanks for your application!{% endblock %}
+
+{% block content %}
+
+<!-- Block goes here -->
+
+<h1>Application submitted!</h1>
+<p>Thank you, {{ first_name }} {{ last_name }}, for applying to be a {{ role }}. Your
+minimum salary requirement is {{ salary }}.</p>
+
+{% endblock %}
